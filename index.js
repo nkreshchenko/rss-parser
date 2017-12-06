@@ -201,7 +201,7 @@ var copyFromXML = function(xml, dest, fields) {
       from = f[0];
       to = f[1];
     }
-    if (xml[from] !== undefined) dest[to] = xml[from][0];
+    if (xml[from] !== undefined) dest[to] = xml[from][xml[from].length - 1];
   })
 }
 
